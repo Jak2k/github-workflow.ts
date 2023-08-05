@@ -12,6 +12,8 @@ Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 2. I replaced `ts-node` with `tsx` for better DX.
 3. I added helpers for your workflows to the package.
 
+!!! The examples are not updated yet !!!
+
 ## What is it?
 
 Github Workflow Generator is a library that enables you to write templates for your GitHub Workflows in JavaScript or Typescript and use that code to generate valid GitHub Workflows as YAML files.  
