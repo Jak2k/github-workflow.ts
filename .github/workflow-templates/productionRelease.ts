@@ -1,9 +1,9 @@
-import { AppWorkflow } from "./index";
-import { basicSetup } from "./helpers/basicSetup.js";
 import { test } from "./helpers/test.js";
 import { NPM_PUBLISH } from "./helpers/Versions.js";
+import { setupForNode } from "../../src/Helpers.js";
+import { Workflow } from "../../src";
 
-export const productionRelease: AppWorkflow = {
+export const productionRelease: Workflow = {
   name: "Release to NPM",
   on: {
     push: {
@@ -17,7 +17,10 @@ export const productionRelease: AppWorkflow = {
       needs: test,
       "runs-on": "ubuntu-latest",
       steps: [
-        ...basicSetup,
+        ...setupForNode({
+          nodeVersion: "20",
+          usePnpm: true,
+        }),
         {
           name: "Publish to NPM",
           uses: NPM_PUBLISH,

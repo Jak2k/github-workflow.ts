@@ -1,11 +1,14 @@
-import { basicSetup } from "./basicSetup.js";
-import { AppJob } from "../index";
+import { Job } from "../../../src/Workflow.js";
+import { setupForNode } from "../../../src/Helpers.js";
 
-export const test: AppJob = {
+export const test: Job = {
   name: "Run tests",
   "runs-on": "ubuntu-latest",
   steps: [
-    ...basicSetup,
+    ...setupForNode({
+      nodeVersion: "20",
+      usePnpm: true,
+    }),
     {
       name: "Run tests",
       run: "npm run test",

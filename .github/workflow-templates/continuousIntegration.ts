@@ -1,7 +1,7 @@
-import { AppWorkflow } from "./index";
 import { test } from "./helpers/test.js";
+import { Workflow } from "../../src";
 
-export const continuousIntegration: AppWorkflow = {
+export const continuousIntegration: Workflow = {
   name: "Run all tests",
   on: {
     push: {
