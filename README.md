@@ -6,6 +6,12 @@ Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 [![GitHub](https://img.shields.io/github/license/Jak2k/github-workflow.ts?style=for-the-badge)](https://github.com/Jak2k/github-workflow.ts/blob/main/LICENSE.md)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Jak2k/github-workflow.ts/Run-all-tests.yml?branch=main&style=for-the-badge)](https://github.com/Jak2k/github-workflow.ts/actions?query=workflow%3A%22Run+all+tests%22)
 
+## What is the difference to [gh-workflow-gen](https://github.com/wardellbagby/gh-workflow-gen)?
+
+1. I replaced `npm` with `pnpm` for faster installing and CI.
+2. I replaced `ts-node` with `tsx` for better DX.
+3. I added helpers for your workflows to the package.
+
 ## What is it?
 
 Github Workflow Generator is a library that enables you to write templates for your GitHub Workflows in JavaScript or Typescript and use that code to generate valid GitHub Workflows as YAML files.  
