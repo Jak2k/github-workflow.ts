@@ -1,5 +1,5 @@
-import { Job } from "../../../src/Workflow.js";
-import { setupForNode } from "../../../src/Helpers.js";
+import { Job } from "../../../src/Workflow";
+import { setupForNode } from "../../../src/Helpers";
 
 export const test: Job = {
   name: "Run tests",

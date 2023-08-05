@@ -23,10 +23,10 @@
     "prebuild": "rimraf dist/",
     "build": "cd src/ && tsc",
     "pretest": "pnpm run build && pnpm link && pnpm link @Jak2k/github-workflow.ts",
-    "test": "node --no-warnings --loader ts-node/esm test/test_runner.ts",
+    "test": "tsx test/test_runner.ts",
     "prepare": "husky install",
     "prepublishOnly": "pnpm run build",
-    "build:actions": "pnpm run build && node --no-warnings --loader ts-node/esm scripts/generate_workflows.ts"
+    "build:actions": "pnpm run build && tsx scripts/generate_workflows.ts"
   },
   "exports": {
     "import": "./dist/index.js"
@@ -38,7 +38,8 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "tsx": "^3.12.7"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
@@ -47,7 +48,6 @@
     "husky": "^8.0.3",
     "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
-    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
   "packageManager": "pnpm@8.6.11"

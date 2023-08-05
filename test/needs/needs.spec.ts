@@ -1,11 +1,7 @@
-import {
-  Workflow,
-  convertToYaml,
-  Job,
-} from "@wardellbagby/gh-workflow-gen";
+import { Workflow, convertToYaml, Job } from "../../dist";
 import path from "path";
 import fs from "fs";
-import { assertEquals, directory } from "../test_helpers.js";
+import { assertEquals, directory } from "../test_helpers";
 
 export const testNeedsWorkflow = () => {
   const myFirstJob: Job = {

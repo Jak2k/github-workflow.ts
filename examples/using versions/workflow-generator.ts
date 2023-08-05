@@ -1,4 +1,4 @@
-import * as versions from "./Versions.js";
+import * as versions from "./Versions";
 import { Job, Step, Workflow } from "@wardellbagby/gh-workflow-gen";
 
 export type VersionedJob = Job<typeof versions>;

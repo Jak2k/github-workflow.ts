@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
-import { Job, Workflow } from "./Workflow.js";
+import { Job, Workflow } from "./Workflow";
 
-export * from "./Workflow.js";
+export * from "./Workflow";
 
 /**
  * Convert an array of entries into an object of type T;
@@ -113,4 +113,4 @@ export const convertToYaml = <T extends Record<string, string>>(
   return yaml.dump(normalize(workflow), { forceQuotes: true, noRefs: true });
 };
 
-export * as Helpers from "./Helpers.js";
+export * as Helpers from "./Helpers";

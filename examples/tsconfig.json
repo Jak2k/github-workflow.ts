@@ -1,5 +1,7 @@
 {
-  "include": ["**/*.ts"],
+  "include": [
+    "**/*"
+  ],
   "compilerOptions": {
     "rootDir": "."
   },

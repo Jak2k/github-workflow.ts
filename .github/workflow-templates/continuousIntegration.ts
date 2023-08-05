@@ -1,4 +1,4 @@
-import { test } from "./helpers/test.js";
+import { test } from "./helpers/test";
 import { Workflow } from "../../src";
 
 export const continuousIntegration: Workflow = {

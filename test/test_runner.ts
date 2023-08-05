@@ -11,7 +11,7 @@ const walk = (dir: string): string[] => {
 
     if (currentPath.isDirectory()) {
       results.push(...walk(absolutePath));
-    } else if (currentPath.isFile() && currentPath.name.includes("spec.ts")) {
+    } else if (currentPath.isFile() && currentPath.name.includes("spec")) {
       results.push(absolutePath);
     }
     currentPath = dirs.readSync();
@@ -29,9 +29,14 @@ console.log();
 
 const tests = walk(testFolder).sort();
 
+console.log("Found tests:", tests.length);
+
 (async () => {
   for (const testFile of tests) {
-    const importedTests = await import(testFile);
+    const importedTests = await import(testFile).catch((e) => {
+      console.error(`    ❌   ${testFile}`);
+      throw e;
+    });
     for (const property of Object.keys(importedTests)) {
       if (property.startsWith("test")) {
         try {
@@ -46,4 +51,6 @@ const tests = walk(testFolder).sort();
       }
     }
   }
-})();
+})().catch((e) => {
+  console.error(e);
+});

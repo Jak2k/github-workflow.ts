@@ -1,6 +1,6 @@
-import { test } from "./helpers/test.js";
-import { NPM_PUBLISH } from "./helpers/Versions.js";
-import { setupForNode } from "../../src/Helpers.js";
+import { test } from "./helpers/test";
+import { NPM_PUBLISH } from "./helpers/Versions";
+import { setupForNode } from "../../src/Helpers";
 import { Workflow } from "../../src";
 
 export const productionRelease: Workflow = {
