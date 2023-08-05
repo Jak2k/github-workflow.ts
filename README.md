@@ -1,4 +1,4 @@
-# GitHub Workflow Generator
+# github-workflow.ts aka. `GitHub Workflow Generator`, but Refactored
 
 Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
