@@ -11,7 +11,7 @@ export const test: Job = {
     }),
     {
       name: "Run tests",
-      run: "npm run test",
+      run: "pnpm run test",
     },
   ],
 };
