@@ -2,9 +2,9 @@
 
 Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
-[![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen)
-[![GitHub](https://img.shields.io/github/license/wardellbagby/gh-workflow-gen?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/blob/main/LICENSE.md)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wardellbagby/gh-workflow-gen/Run-all-tests.yml?branch=main&style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
+<!--[![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen)-->
+[![GitHub](https://img.shields.io/github/license/Jak2k/github-workflow.ts?style=for-the-badge)](https://github.com/Jak2k/github-workflow.ts/blob/main/LICENSE.md)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Jak2k/github-workflow.ts/Run-all-tests.yml?branch=main&style=for-the-badge)](https://github.com/Jak2k/github-workflow.ts/actions?query=workflow%3A%22Run+all+tests%22)
 
 ## What is it?
 
