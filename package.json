@@ -22,11 +22,11 @@
   "scripts": {
     "prebuild": "rimraf dist/",
     "build": "cd src/ && tsc",
-    "pretest": "npm run build && npm link && npm link @wardellbagby/gh-workflow-gen",
+    "pretest": "pnpm run build && pnpm link && pnpm link @wardellbagby/gh-workflow-gen",
     "test": "node --no-warnings --loader ts-node/esm test/test_runner.ts",
     "prepare": "husky install",
-    "prepublishOnly": "npm run build",
-    "build:actions": "npm run build && node --no-warnings --loader ts-node/esm scripts/generate_workflows.ts"
+    "prepublishOnly": "pnpm run build",
+    "build:actions": "pnpm run build && node --no-warnings --loader ts-node/esm scripts/generate_workflows.ts"
   },
   "exports": {
     "import": "./dist/index.js"
